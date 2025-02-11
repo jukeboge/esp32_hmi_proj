@@ -96,16 +96,7 @@ https://www.codeblocks.org/downloads/
 
 `git clone --recurse-submodules https://github.com/lvgl/lv_port_win_codeblocks.git`
 
-```shell
-$ git log
-commit 3defb84ea5c107bedbc1c9c2222355f2fcf7330d (HEAD -> master, origin/master, origin/HEAD)
-Author: AndreaBodini <andreabodini@gmail.com>
-Date: Fri Oct 25 23:25:55 2024 +0200
 
-chore(cmake): unset the cache of USE_FREERTOS (#68)
-
-Add the unset before the option makes the USE_FREERTOS variable active with
-```
 
 #### 4.1.2 环境验证
 
@@ -124,6 +115,17 @@ Add the unset before the option makes the USE_FREERTOS variable active with
 #### 4.2.1 拉取vscode 模拟器工程
 
 `git clone --recursive https://github.com/lvgl/lv_port_pc_vscode`
+
+```shell
+$ git log
+commit 3defb84ea5c107bedbc1c9c2222355f2fcf7330d (HEAD -> master, origin/master, origin/HEAD)
+Author: AndreaBodini <andreabodini@gmail.com>
+Date: Fri Oct 25 23:25:55 2024 +0200
+
+chore(cmake): unset the cache of USE_FREERTOS (#68)
+
+Add the unset before the option makes the USE_FREERTOS variable active with
+```
 
 #### 4.2.2 安装插件
 
