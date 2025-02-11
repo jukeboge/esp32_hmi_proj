@@ -4,13 +4,13 @@
 
 ### **1.1 原理图**
 
-![1729847963592](./image/1729847963592.jpg)
+![原理图](image/1729847963592.jpg)
 
 ### 1.2 实物展示
 
-![1729848023144](image/LVGL项目（一）/1729848023144.png)
+![实物展示](image/LVGL项目（一）/1729848023144.png)
 
-![1729848040747](image/LVGL项目（一）/1729848040747.png)![1729848102150](image/LVGL项目（一）/1729848102150.png)
+![实物展示](image/LVGL项目（一）/1729848040747.png)![实物展示](image/LVGL项目（一）/1729848102150.png)
 
 ### 1.3 功能讲解
 
@@ -96,15 +96,26 @@ https://www.codeblocks.org/downloads/
 
 `git clone --recurse-submodules https://github.com/lvgl/lv_port_win_codeblocks.git`
 
+```shell
+$ git log
+commit 3defb84ea5c107bedbc1c9c2222355f2fcf7330d (HEAD -> master, origin/master, origin/HEAD)
+Author: AndreaBodini <andreabodini@gmail.com>
+Date: Fri Oct 25 23:25:55 2024 +0200
+
+chore(cmake): unset the cache of USE_FREERTOS (#68)
+
+Add the unset before the option makes the USE_FREERTOS variable active with
+```
+
 #### 4.1.2 环境验证
 
 需要注意，更新mingw版本，否则使用codeblocks自带的mingw编译会报错
 
-![1730185763159](image/LVGL项目（一）/1730185763159.png)
+![环境验证](image/LVGL项目（一）/1730185763159.png)
 
 链接异常：
 
-![1730188688941](image/LVGL项目（一）/1730188688941.png)
+![链接异常](image/LVGL项目（一）/1730188688941.png)
 
 [Code::Blocks set use flat objects - How-to - LVGL Forum](https://forum.lvgl.io/t/code-blocks-set-use-flat-objects/16636)
 
@@ -116,41 +127,41 @@ https://www.codeblocks.org/downloads/
 
 #### 4.2.2 安装插件
 
-![1730883608094](image/LVGL项目（一）/1730883608094.png)
+![安装插件](image/LVGL项目（一）/1730883608094.png)
 
 #### 4.2.3安装mingw
 
 [Releases · mstorsjo/llvm-mingw (github.com)](https://github.com/mstorsjo/llvm-mingw/releases)
 
-![1730876912120](image/LVGL项目（一）/1730876912120.png)
+![安装mingw](image/LVGL项目（一）/1730876912120.png)
 
 下载后解压，并添加到环境变量，例如：
 
-![1730881446824](image/LVGL项目（一）/1730881446824.png)
+![环境变量](image/LVGL项目（一）/1730881446824.png)
 
 #### 4.2.4 安装sdl
 
 [Releases · libsdl-org/SDL](https://github.com/libsdl-org/SDL/releases)
 
-![1730881069629](image/LVGL项目（一）/1730881069629.png)
+![安装sdl](image/LVGL项目（一）/1730881069629.png)
 
 #### 4.2.5 安装cmake
 
 [Download CMake](https://cmake.org/download/)
 
-![1730876992056](image/LVGL项目（一）/1730876992056.png)
+![安装cmake](image/LVGL项目（一）/1730876992056.png)
 
 #### 4.2.6 错误处理
 
-![1730903273138](image/LVGL项目（一）/1730903273138.png)
+![错误1](image/LVGL项目（一）/1730903273138.png)
 
-![1730903430660](image/LVGL项目（一）/1730903430660.png)
+![错误2](image/LVGL项目（一）/1730903430660.png)
 
-![1730903767111](image/LVGL项目（一）/1730903767111.png)
+![错误3](image/LVGL项目（一）/1730903767111.png)
 
-![1730903823348](image/LVGL项目（一）/1730903823348.png)
+![错误4](image/LVGL项目（一）/1730903823348.png)
 
-![1730903876249](image/LVGL项目（一）/1730903876249.png)
+![错误5](image/LVGL项目（一）/1730903876249.png)
 
 **参考**
 
@@ -162,15 +173,15 @@ https://www.codeblocks.org/downloads/
 
 工作目录下打开VSCODE
 
-![1730428545837](image/LVGL项目（一）/1730428545837.png)
+![打开vscode](image/LVGL项目（一）/1730428545837.png)
 
 ### 5.2 添加lvgl
 
-![1730428632902](image/LVGL项目（一）/1730428632902.png)
+![添加lvgl](image/LVGL项目（一）/1730428632902.png)
 
 ### 5.3 编译错误解决
 
-![1730430256775](image/LVGL项目（一）/1730430256775.png)
+![编译错误](image/LVGL项目（一）/1730430256775.png)
 
 ### 5.4 功能确认
 
@@ -186,7 +197,7 @@ managed_components\lvgl__lvgl\docs\integration\chip\espressif.rst
 
 注意：使用CONFIG_LV_USE_BUILTIN_MALLOC，需要将lv_init()放在lv_display_create之前，先完成lv_mem的初始化
 
-![1730444750600](image/LVGL项目（一）/1730444750600.png)
+![hello](image/LVGL项目（一）/1730444750600.png)
 
 ## 六、驱动完善
 
@@ -194,15 +205,15 @@ managed_components\lvgl__lvgl\docs\integration\chip\espressif.rst
 
 原理图
 
-![1730554230954](image/LVGL项目（一）/1730554230954.png)
+![触摸原理1](image/LVGL项目（一）/1730554230954.png)
 
-![1730618287449](image/LVGL项目（一）/1730618287449.png)
+![触摸原理2](image/LVGL项目（一）/1730618287449.png)
 
 #### 6.1.1 添加GT911组件
 
-![1730617861463](image/LVGL项目（一）/1730617861463.png)
+![gt911a](image/LVGL项目（一）/1730617861463.png)
 
-![1730618106142](image/LVGL项目（一）/1730618106142.png)
+![gt911b](image/LVGL项目（一）/1730618106142.png)
 
 #### 6.1.2 添加GT911初始化
 
@@ -245,7 +256,7 @@ static void example_touch_read_task(void *arg)
 
 原理图
 
-![1730689501867](image/LVGL项目（一）/1730689501867.png)
+![sd](image/LVGL项目（一）/1730689501867.png)
 
 #### 6.2.1 sdspi组件
 
@@ -305,7 +316,7 @@ ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200a0d1
 
 **绘制草图**
 
-![1730962501055](image/LVGL项目（一）/1730962501055.png)
+![草图](image/LVGL项目（一）/1730962501055.png)
 
 **添加输入框**
 
@@ -323,7 +334,7 @@ ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200a0d1
 
 参考 `lvgl\examples\others\ime\lv_example_ime_pinyin_1.c`
 
-![1732718634682](image/LVGL项目（一）/1732718634682.png)
+![输入](image/LVGL项目（一）/1732718634682.png)
 
 ### 7.2 CAD字体文件解析
 
@@ -331,11 +342,11 @@ ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200a0d1
 
 模拟器端lv_confi.h需要修改的地方
 
-![1732719419152](image/LVGL项目（一）/1732719419152.png)
+![文件系统](image/LVGL项目（一）/1732719419152.png)
 
 ### 7.3 CAD字体渲染
 
-![1733064308371](image/LVGL项目（一）/1733064308371.png)
+![渲染](image/LVGL项目（一）/1733064308371.png)
 
 31.shx文件是由.shp文件编译生成，这里我们用到的是大字体（适用中文），文件中描述字体的坐标数据前面会有一个gbk码（2byte）
 
